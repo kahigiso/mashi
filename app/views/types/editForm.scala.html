@@ -1,0 +1,29 @@
+@(id: Long, typeForm: Form[Type])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) }
+
+@main {
+
+<h1>Modifier une nature</h1>
+
+@form(routes.Categories.update(id)) {
+
+    <fieldset>
+        @inputText(typeForm("name"), '_label -> " Nom d\\'une nature ")
+        @inputText(typeForm("abbreviation"), '_label -> "Abbreviation ")
+    </fieldset>
+
+    <div class="actions">
+        <input type="submit" value="Modifier" class="btn primary"> or
+        <a href="@routes.Types.list()" class="btn">Cancel</a>
+    </div>
+
+}
+
+    @form(routes.Types.delete(id), 'class -> "topRight") {
+        <input type="submit" value="Delete category" class="btn danger">
+    }
+
+}

@@ -1,0 +1,224 @@
+# Users
+
+- &bob !!models.User
+    email:      bob@example.com
+    firstName:  Bob
+    lastName:   Ruganzu
+    password:   secret
+
+- &jane !!models.User
+    email:      jane@example.com
+    firstName:  Jane
+    lastName:   Rugunga
+    password:   secret
+
+- &jeff !!models.User
+    email:      jeff@example.com
+    firstName:  Jeff
+    lastName:   Burabyo
+    password:   secret
+
+#Category
+
+- &Adj !!models.Category
+    name:      Adjective
+    abbreviation:  Adj
+
+- &Advc !!models.Category
+    name:      Adverbe
+    abbreviation:  Adv
+
+- &Agri !!models.Category
+    name:      Agricucture
+    abbreviation:  Agri
+
+- &Anat !!models.Category
+    name:      Anatomie
+    abbreviation:  Anat
+
+- &Bota !!models.Category
+    name:      Botanique
+    abbreviation:  Bota
+
+- &Gram !!models.Category
+    name:      Grammaire
+    abbreviation:  Gram
+
+- &Const !!models.Category
+    name:      Construction
+    abbreviation:  Const
+
+- &Cuis !!models.Category
+    name:      Cuisine
+    abbreviation:  Cuis
+
+- &Trans !!models.Category
+    name:      Transport
+    abbreviation:  Trans
+
+- &cat !!models.Category
+    name:      Commerce
+    abbreviation:  Com
+
+- &Com !!models.Category
+    name:      Education
+    abbreviation:  Educ
+
+- &Elevag !!models.Category
+    name:      Elevage
+    abbreviation:  Elevag
+
+- &Exclam !!models.Category
+    name:      Exclamation
+    abbreviation:  Exclam
+
+- &Fam !!models.Category
+    name:      Famille
+    abbreviation:  Fam
+
+- &Foret !!models.Category
+    name:      Foret
+    abbreviation:  Foret
+
+- &Geo !!models.Category
+    name:      Geographie
+    abbreviation:  Geo
+
+- &Esp !!models.Category
+    name:      Espace
+    abbreviation:  Esp
+
+- &Habil !!models.Category
+    name:      Habillement
+    abbreviation:  Habil
+
+- &Habit !!models.Category
+    name:      Habitation
+    abbreviation:  Habit
+
+- &Vach !!models.Category
+    name:      Vache
+    abbreviation:  Vach
+
+- &Just !!models.Category
+    name:      Justice
+    abbreviation:  Just
+
+- &Philo !!models.Category
+    name:      Philosophie
+    abbreviation:  Philo
+
+- &Med !!models.Category
+    name:      Medecine
+    abbreviation:  Med
+
+- &Milit !!models.Category
+    name:      Militaire
+    abbreviation:  Milit
+
+- &Music !!models.Category
+    name:      Music
+    abbreviation:  Music
+
+- &Nm-Pr !!models.Category
+    name:      Nom Propre
+    abbreviation:  Nm-Pr
+
+- &Calc !!models.Category
+    name:      Calcul
+    abbreviation:  Calc
+
+- &Pec-Cha !!models.Category
+    name:      Peche-Chasse
+    abbreviation:  Pec-Cha
+
+- &Phys !!models.Category
+    name:      Physique
+    abbreviation:  Phys
+
+- &out !!models.Category
+    name:      Outil
+    abbreviation:  out
+
+- &Pron !!models.Category
+    name:      Pronom
+    abbreviation:  Pron
+
+- &Relig !!models.Category
+    name:      Religion
+    abbreviation:  Relig
+
+- &Seign !!models.Category
+    name:      Seignerie
+    abbreviation:  Seign
+
+- &Soc !!models.Category
+    name:      Societe
+    abbreviation:  Soc
+
+- &Jeu !!models.Category
+    name:      Jeu
+    abbreviation:  Jeu
+
+- &Zoo !!models.Category
+    name:      Zoologie
+    abbreviation:  Zoo
+
+- &Temps !!models.Category
+    name:      Temps
+    abbreviation:  Temps
+
+- &Biere !!models.Category
+    name:      Biere
+    abbreviation:  Biere
+
+- &Vulg !!models.Category
+    name:      Vulgaire
+    abbreviation:  Vulg
+
+- &Polit !!models.Category
+    name:      Politique
+    abbreviation:  Polit
+
+#Type
+
+- &ncom !!models.Type
+    name:      Nom commun
+    abbreviation:  N
+
+- &verbe !!models.Type
+    name:      Verbe
+    abbreviation:  V
+
+- &Adv !!models.Type
+    name:      Adverbe
+    abbreviation:  Adv
+
+- &Abj !!models.Type
+    name:      Adjectif
+    abbreviation:  Adj
+
+- &Exc !!models.Type
+    name:      Exclamation
+    abbreviation:  Exc
+
+- &Np !!models.Type
+    name:      Nom Propre
+    abbreviation:  Np
+
+- &Pr !!models.Type
+    name:      Prenom
+    abbreviation:  Pr
+
+
+
+
+
+
+
+
+
+
+
+
+

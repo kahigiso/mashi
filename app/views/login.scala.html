@@ -1,0 +1,40 @@
+@(form: Form[Application.Login])
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Computers database</title>
+    <link rel="stylesheet" type="text/css" media="screen" href='@routes.Assets.at("stylesheets/bootstrap.min.css")'>
+    <link rel="stylesheet" type="text/css" media="screen" href='@routes.Assets.at("stylesheets/main.css")'>
+</head>
+<body>
+<header class="topbar">
+    <h1 class="fill">
+        <a href="@routes.Application.index()">Play sample application &mdash; Computer database</a>
+    </h1>
+</header>
+<section id="main">
+    @helper.form(routes.Application.authenticate) {
+    <h1>Sign in</h1>
+    @if(form.hasGlobalErrors) {
+        <p class="error">
+            @form.globalError.message
+        </p>
+    }
+    @if(flash.contains("success")) {
+        <p class="success">
+            @flash.get("success")
+        </p>
+    }
+    <p>
+        <input type="email" name="email" placeholder="Email" value='@form("email").value'/>
+    </p>
+    <p>
+        <input type="password" name="password" placeholder="Password">
+    </p>
+    <p>
+        <button type="submit">Login</button>
+    </p>
+    }
+</section>
+</body>
+</html>

@@ -1,0 +1,26 @@
+@(categoryForm: Form[Category])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) }
+
+@main {
+
+    <h1>Add a category</h1>
+
+    @form(routes.Categories.save()) {
+
+        <fieldset>
+
+            @inputText(categoryForm("name"), '_label -> "Category name ")
+            @inputText(categoryForm("abbreviation"), '_label -> "Abbreviation ")
+        </fieldset>
+
+        <div class="actions">
+            <input type="submit" value="Save" class="btn primary"> or
+            <a href="@routes.Categories.list()" class="btn">Cancel</a>
+        </div>
+
+    }
+
+}

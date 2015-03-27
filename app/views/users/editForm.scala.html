@@ -1,0 +1,30 @@
+@(email: String, userForm: Form[User])
+
+@import helper._
+
+@implicitFieldConstructor = @{ FieldConstructor(twitterBootstrapInput.render) }
+
+@main {
+
+<h1>Modifier un utilisateur</h1>
+
+@form(routes.Users.update(email)) {
+
+    <fieldset>
+        @inputText(userForm("firstName"), '_label -> " Prenom ")
+        @inputText(userForm("lastName"), '_label -> " Nom ")
+        @inputText(userForm("password"), '_label -> " Password ")
+    </fieldset>
+
+    <div class="actions">
+        <input type="submit" value="Modifier" class="btn primary">
+        <a href="@routes.Users.list()" class="btn">Cancel</a>
+    </div>
+
+}
+
+    @form(routes.Users.delete(email), 'class -> "topRight") {
+        <input type="submit" value="Effacer un utilisateur" class="btn danger">
+    }
+
+}

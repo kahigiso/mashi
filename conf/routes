@@ -1,0 +1,38 @@
+# Routes
+# This file defines all application routes (Higher priority routes first)
+# ~~~~
+
+# Home page
+GET    /                           controllers.Application.index()
+
+#User Authentication
+GET     /login                      controllers.Application.login()
+POST    /login                      controllers.Application.authenticate()
+GET     /logout                     controllers.Application.logout()
+
+#Category
+GET    /categories                 controllers.Categories.list(p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "")
+GET    /categories/new             controllers.Categories.create()
+GET    /categories:id              controllers.Categories.update(id: Long)
+GET    /categories:id              controllers.Categories.edit(id: Long)
+POST   /categories                 controllers.Categories.save()
+POST   /categories/:id/delete      controllers.Categories.delete(id:Long)
+
+#Types
+GET    /types                 controllers.Types.list(p:Int ?= 0, s ?= "name", o ?= "asc", f ?= "")
+GET    /types/new             controllers.Types.create()
+GET    /types:id              controllers.Types.update(id: Long)
+GET    /types:id              controllers.Types.edit(id: Long)
+POST   /types                 controllers.Types.save()
+POST   /types/:id/delete      controllers.Types.delete(id:Long)
+
+#Users
+GET    /users                    controllers.Users.list(p:Int ?= 0, s ?= "firstName", o ?= "asc", f ?= "")
+GET    /users/new                controllers.Users.create()
+GET    /users:email              controllers.Users.update(email: String)
+GET    /users:email              controllers.Users.edit(email: String)
+POST   /users                    controllers.Users.save()
+POST   /users/:email/delete      controllers.Users.delete(email: String)
+
+# Map static resources from the /public folder to the /assets URL path
+GET     /assets/*file               controllers.Assets.at(path="/public", file)
